@@ -8,4 +8,20 @@ footer {
 
 footer span:nth-child(1) {
     margin-right: auto;
+    grid-area: a;
+}
+
+@media screen and (max-width: 425px) {
+    & footer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas:
+        " a a "
+        " b c ";
+        justify-content: center;
+        align-items: center;
+
+        & span:nth-child(1) {
+            margin-left: auto;
+    }
 }

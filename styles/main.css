@@ -6,7 +6,21 @@ main {
 }
 
 main img {
-    width: 286px;
+    width: 100%;
+    max-width: 286px;
     height: 286px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        width: 100%;
+        max-width: 425px;
+        padding-inline: 16px;
+    }
+    main img {
+        width: 100%;
+        max-width: 400px;
+        
+    }
 }

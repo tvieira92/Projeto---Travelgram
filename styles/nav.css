@@ -19,3 +19,12 @@ nav ul li:last-child img {
     height: 40px;
 }
 
+@media screen and (max-width: 425px) {
+    .container {
+        padding-inline: 16px;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+}

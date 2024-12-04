@@ -4,7 +4,7 @@ header {
     font: var(--text-md);
 }
 
-header .container {
+header .container-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,11 +16,13 @@ header .container {
 }
 
 #profile > div {
+    width: 100%;
     max-width: 384px;
 }
 
 #profile > img {
-    width: 176px;
+    width: 100%;
+    max-width: 176px;
     height: 176px;
     object-fit: cover;
     border-radius: 50%;
@@ -40,7 +42,8 @@ header .container {
     flex-direction: column;
     gap: 16px;
 
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
 }
 
 #info li {
@@ -48,4 +51,17 @@ header .container {
     align-items: center;
     gap: 8px;
 
+}
+
+@media screen and (max-width: 425px) {
+    #profile {
+        display: grid;
+        padding-bottom: 32px;
+        
+    }
+    #info {
+        display: grid;
+        
+        
+    }
 }
